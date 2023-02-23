@@ -1,0 +1,75 @@
+body{
+    background: #fff;
+    margin-top:20px;
+    }
+    .thumb-lg {
+    height: 88px;
+    width: 88px;
+    }
+    .card {
+    border: none;
+    box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.05);
+    background-color: #14213d;
+    }
+    .media-body h5{
+        color: #fca311;
+    }
+
+    /* .media-body p{
+        color:#fca311;
+    } */
+
+    .m-b-30 {
+    margin-bottom: 30px;
+    }
+    .social-links li a {
+    -webkit-border-radius: 50%;
+    background: #fcfdfd;
+    border-radius: 50%;
+    color: #fca311;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 30px;
+    }
+
+    .social-links li a:hover{
+        color:#14213d;
+    }
+
+    .heading{
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .heading h2{
+        font-size: 2.5rem;
+        color: #14213d;
+        text-transform: uppercase;
+        padding: 0.4rem 0;
+        letter-spacing: 4px;
+      }
+      .line div{
+        margin: 0 0.2rem;
+      }
+      .line div:nth-child(1),
+      .line div:nth-child(3){
+        height: 3px;
+        width: 70px;
+        background: #14213d;
+        border-radius: 5px;
+      }
+      .line{
+        display: flex;
+        align-items: center;
+      }
+      .line div:nth-child(2){
+        width: 10px;
+        height: 10px;
+        background: #14213d;
+        border-radius: 50%;
+      }

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    text-decoration: none;
+  }
+
+  body {
+    background-color: #fff;
+  }
+  
+  .wrapper1 {
+    height: 100vh;
+    padding: 20px;
+    background-color: #E5E5E5;
+    margin: 30px 50px;
+    display: grid;
+  }
+  .wrapper1 .Services {
+    height: 180px;
+    justify-content: space-between;
+    background-color: #14213D;
+    margin-bottom: 10px;
+    padding: 20px;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 0 2px #000;
+    overflow: hidden;
+  }
+  .wrapper1 .Services .radio_wrap {
+    margin-right: 15px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding-left: 22px;
+    margin-top: 20px;
+  }
+  
+  .wrapper1 .Services .radio_wrap input:checked + .radio_mark {
+    color: rgb(22, 10, 71);
+  }
+  
+  .wrapper1 .Services span {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wrapper1 .Services span p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .wrapper1 .Services .radio_wrap input:checked + .radio_mark p {
+    color: #FCA311;
+  }
+  .pictures {
+    height: 110px;
+    width: 130px;
+  }
+  
+  .img1 {
+    width: 120px;
+  }
+  
+  .wrapper .content {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+  }
+
+  body{margin-top:20px;
+    background:#eee;
+    }
+    
+    .card {
+        box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
+    }
+    
+    .width-90 {
+        width: 90px!important;
+    }
+    .rounded-3 {
+        border-radius: 0.5rem !important;
+    }
+    .mb-1{
+        font-size: 20px;
+        color: #14213D;
+    }
+    .text-muted{
+        font-size: 15px;
+    }
+    
+    a {
+    text-decoration:none;    
+    }
