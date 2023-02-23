@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SERVICIO - NGO Profile</title>
+    <link rel="stylesheet" href="editngoprofile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <section class="container">
+        <div class = "heading">
+            <h2>Edit NGO Profile</h2>
+            <div class = "line">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+      <form action="editform.php" class="form" enctype="multipart/form-data" method="post">
+        <div class="profile-pic">
+            <label class="-label" for="file">
+              <span class="glyphicon glyphicon-camera"></span>
+              <span>Change Image</span>
+            </label>
+            <input id="file" type="file" onchange="loadFile(event)"/>
+            <img src="https://cdn.pixabay.com/photo/2017/08/06/21/01/louvre-2596278_960_720.jpg" id="output" width="200" />
+          </div>
+    
+          <script>
+            var loadFile = function (event) {
+      var image = document.getElementById("output");
+      image.src = URL.createObjectURL(event.target.files[0]);
+    };
+    
+          </script>
+        <div class="input-box">
+          <label>NGO Name</label>
+          <input type="text" placeholder="Enter NGO name" required name="ngoname"/>
+        </div>
+
+        <div class="input-box">
+            <label>Owner Name</label>
+            <input type="text" placeholder="Enter owner name" required name="ownername"/>
+          </div>
+
+          <div class="input-box">
+            <label>Company ID</label>
+            <input type="text" placeholder="Enter comapny id" required name="companyid"/>
+          </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="text" placeholder="Enter email address" required name="email"/>
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" placeholder="Enter phone number" required name="phone"/>
+          </div>
+          <div class="input-box">
+            <label>NGO Formation Date</label>
+            <input type="date" placeholder="Enter NGO formation date" required name="date"/>
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Social Work Domain</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-edu" name="domain" checked />
+              <label for="check-edu">Education</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-cd" name="domain" />
+              <label for="check-cd">Community Development</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-health" name="domain" />
+              <label for="check-health">Health</label>
+            </div>
+            <div class="gender">
+                <input type="radio" id="check-wemp" name="domain" />
+                <label for="check-wemp">Women Empowerment</label>
+            </div>
+            <div class="gender">
+                <input type="radio" id="check-hryts" name="domain" />
+                <label for="check-hryts">Human Rights</label>
+            </div>
+            <div class="gender">
+                <input type="radio" id="check-aryts" name="domain" />
+                <label for="check-aryts">Animal Rights</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-charity" name="domain" />
+              <label for="check-charity">Charity</label>
+          </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Address</label>
+          <input type="text" placeholder="Enter street address" required name="add1"/>
+          <input type="text" placeholder="Enter street address line 2" required name="add2"/>
+          <div class="column">
+            <input type="text" placeholder="Country" required name="country"/>
+            <input type="text" placeholder="Enter your city" required name="city"/>
+          </div>
+          <div class="column">
+            <input type="text" placeholder="Enter your region" required name="region"/>
+            <input type="number" placeholder="Enter postal code" required name="postal"/>
+          </div>
+        </div>
+        <div class="input-box">
+            <label>Description</label>
+            <input type="textarea" maxlength="200" placeholder="write something about your NGO" required name="description"/>
+          </div>
+        <button>Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
